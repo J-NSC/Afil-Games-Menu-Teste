@@ -15,3 +15,4 @@ global.menu = [
     [["Volume ", "volume"], ["Tela Cheia ", "modo"], "Voltar"],
     ["Voltar"]
 ];
+load_settings();

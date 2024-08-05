@@ -1,0 +1,13 @@
+{
+  "$GMScript":"v1",
+  "%Name":"sct_load_settings",
+  "isCompatibility":false,
+  "isDnD":false,
+  "name":"sct_load_settings",
+  "parent":{
+    "name":"Scripts",
+    "path":"folders/Scripts.yy",
+  },
+  "resourceType":"GMScript",
+  "resourceVersion":"2.0",
+}

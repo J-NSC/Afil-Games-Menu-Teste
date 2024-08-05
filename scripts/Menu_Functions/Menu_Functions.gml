@@ -1,5 +1,3 @@
-// menu_functions.gml
-
 function draw_menu_option(index, text) {
     var option_y = MENU_Y + GAP * index;
     var text_width = string_width(text);
@@ -96,14 +94,15 @@ function change_menu_value(key, right, left) {
         var _max = array_length(_limit_arr) - 1;
     }
 
-    var new_value = clamp(_map_arr[0] + (right - left),_min, _max);
-    _map_arr[@ 0] = new_value;
+    _map_arr[@ 0] = clamp(_map_arr[0] + (right - left),_min, _max);
 
     if (key == "volume") {
         audio_master_gain(_map_arr[0] / _max);
     } else if (key == "modo") {
         window_set_fullscreen(_map_arr[0] == 0);
     }
+	
+	save_settings();
 }
 
 
